@@ -35,51 +35,51 @@ const HeroSection = () => {
           {/* Main Content */}
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-white">Meet</span>{" "}
+              <span className="text-hero-primary">Meet</span>{" "}
               <span className="text-gradient">Maheshwari</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-hero-secondary mb-8 max-w-3xl mx-auto">
               Full-Stack Developer | DSA Enthusiast | AI Explorer
             </p>
             
-            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
+            <p className="text-lg text-hero-muted mb-12 max-w-2xl mx-auto">
               Passionate about building innovative web applications and solving complex problems 
               with modern technologies. Specialized in MERN stack and cloud solutions.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Button asChild className="btn-hero bg-white text-primary hover:bg-white/90">
+              <Button asChild className="btn-hero bg-hero-button text-hero-button-text hover:bg-hero-button-hover">
                 <a href="#projects">View My Work</a>
               </Button>
               
-              <Button asChild className="btn-outline border-white text-white hover:bg-white hover:text-primary">
+              <Button asChild className="btn-outline border-hero-border text-hero-primary hover:bg-hero-button hover:text-hero-button-text">
                 <a href="#contact">Get In Touch</a>
               </Button>
             </div>
 
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mb-16">
-              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-white hover:text-primary hover:bg-white/20">
+              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-hero-primary hover:text-hero-button-text hover:bg-hero-button/20">
                 <a href="https://github.com/Meet-Maheshwari" target="_blank" rel="noopener noreferrer">
                   <Github className="h-6 w-6" />
                 </a>
               </Button>
               
-              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-white hover:text-primary hover:bg-white/20">
+              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-hero-primary hover:text-hero-button-text hover:bg-hero-button/20">
                 <a href="https://www.linkedin.com/in/meet-maheshwari-80a639254/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-6 w-6" />
                 </a>
               </Button>
               
-              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-white hover:text-primary hover:bg-white/20">
+              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-hero-primary hover:text-hero-button-text hover:bg-hero-button/20">
                 <a href="mailto:meetmaheshwari2107@gmail.com">
                   <Mail className="h-6 w-6" />
                 </a>
               </Button>
               
-              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-white hover:text-primary hover:bg-white/20">
+              <Button asChild variant="ghost" size="icon" className="w-12 h-12 text-hero-primary hover:text-hero-button-text hover:bg-hero-button/20">
                 <a href="/resume.pdf" download>
                   <Download className="h-6 w-6" />
                 </a>
@@ -89,7 +89,7 @@ const HeroSection = () => {
             {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
               <div className="animate-bounce">
-                <ArrowDown className="h-6 w-6 text-white/80" />
+                <ArrowDown className="h-6 w-6 text-hero-muted" />
               </div>
             </div>
           </div>

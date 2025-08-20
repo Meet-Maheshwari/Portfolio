@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex items-center space-x-1 text-sm">
             <span>Built with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
-            <span>using React, TypeScript & Tailwind CSS</span>
+            <span>using React & Tailwind CSS</span>
           </div>
         </div>
         

@@ -3,17 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
-interface Project {
-  title: string
-  description: string
-  longDescription: string
-  technologies: string[]
-  liveUrl?: string
-  githubUrl: string
-  featured: boolean
-}
-
-const projects: Project[] = [
+const projects = [
   {
     title: "MyPharma",
     description: "AI-Supported Pharmacy Platform with intelligent inventory management",
@@ -49,7 +39,7 @@ const projects: Project[] = [
   }
 ]
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({ project }) => {
   return (
     <Card className={`card-hover h-full ${project.featured ? 'ring-2 ring-primary/20' : ''}`}>
       <CardHeader>

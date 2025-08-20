@@ -70,6 +70,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hero: {
+					primary: 'hsl(var(--hero-primary))',
+					secondary: 'hsl(var(--hero-secondary))',
+					muted: 'hsl(var(--hero-muted))',
+					button: 'hsl(var(--hero-button))',
+					'button-text': 'hsl(var(--hero-button-text))',
+					'button-hover': 'hsl(var(--hero-button-hover))',
+					border: 'hsl(var(--hero-border))'
 				}
 			},
 			borderRadius: {

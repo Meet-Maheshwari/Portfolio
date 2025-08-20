@@ -25,7 +25,7 @@ const Navigation = () => {
     { href: "#contact", label: "Contact" },
   ]
 
-  const scrollToSection = (href) => {
+  const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })

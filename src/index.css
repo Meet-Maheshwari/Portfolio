@@ -64,15 +64,6 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Hero section colors for better light mode compatibility */
-    --hero-primary: 240 10% 30%;
-    --hero-secondary: 240 8% 40%;
-    --hero-muted: 240 6% 50%;
-    --hero-button: 240 100% 95%;
-    --hero-button-text: 240 10% 20%;
-    --hero-button-hover: 240 100% 92%;
-    --hero-border: 240 20% 80%;
-
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -136,15 +127,6 @@
     --shadow-soft: 0 2px 25px -5px hsl(0 0% 0% / 0.4);
     --shadow-glow: 0 0 40px hsl(210 90% 55% / 0.3);
     --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.25);
-
-    /* Hero section colors for dark mode */
-    --hero-primary: 0 0% 98%;
-    --hero-secondary: 0 0% 85%;
-    --hero-muted: 0 0% 70%;
-    --hero-button: 0 0% 98%;
-    --hero-button-text: 240 10% 8%;
-    --hero-button-hover: 0 0% 90%;
-    --hero-border: 0 0% 98%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

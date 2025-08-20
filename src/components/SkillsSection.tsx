@@ -2,7 +2,13 @@ import { useState, useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-const skills = [
+interface Skill {
+  name: string
+  level: number
+  category: string
+}
+
+const skills: Skill[] = [
   // Programming Languages
   { name: "JavaScript", level: 90, category: "Languages" },
   { name: "TypeScript", level: 85, category: "Languages" },
@@ -32,7 +38,7 @@ const skills = [
   { name: "VS Code", level: 95, category: "Cloud & Tools" },
 ]
 
-const SkillBar = ({ skill, shouldAnimate }) => {
+const SkillBar = ({ skill, shouldAnimate }: { skill: Skill; shouldAnimate: boolean }) => {
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
@@ -62,7 +68,7 @@ const SkillBar = ({ skill, shouldAnimate }) => {
 
 const SkillsSection = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef(null)
+  const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -155,9 +155,10 @@
 @layer components {
   /* Hero gradient background */
   .hero-gradient {
-    background: linear-gradient(135deg, 
-      hsl(var(--hero-gradient-from)), 
-      hsl(var(--hero-gradient-via)), 
+    background: linear-gradient(
+      135deg,
+      hsl(var(--hero-gradient-from)),
+      hsl(var(--hero-gradient-via)),
       hsl(var(--hero-gradient-to))
     );
   }
@@ -180,8 +181,9 @@
 
   .skill-bar-fill {
     @apply absolute top-0 left-0 h-full rounded-full transition-all duration-1000 ease-out;
-    background: linear-gradient(90deg, 
-      hsl(var(--skill-bar-fill)), 
+    background: linear-gradient(
+      90deg,
+      hsl(var(--skill-bar-fill)),
       hsl(var(--primary-glow))
     );
   }
@@ -193,8 +195,9 @@
 
   /* Text gradients */
   .text-gradient {
-    background: linear-gradient(135deg, 
-      hsl(var(--primary)), 
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
       hsl(var(--accent))
     );
     -webkit-background-clip: text;
@@ -236,21 +239,44 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
